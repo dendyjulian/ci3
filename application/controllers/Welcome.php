@@ -24,7 +24,9 @@ class Welcome extends CI_Controller {
 	}
 	public function home()
 	{
-		$this->load->view('home');
+		$this->load->model('personaldata');
+		$data = $this->personaldata->getData();
+		$this->load->view('home',$data,FALSE);
 	}
 	public function about()
 	{
@@ -36,6 +38,8 @@ class Welcome extends CI_Controller {
 	}
 	public function songs()
 	{
-		$this->load->view('songs');
+		$this->load->model('personaldata');
+		$data = $this->personaldata->getData();
+		$this->load->view('songs',$data,FALSE);
 	}
 }

@@ -13,7 +13,7 @@
     <link href="<?php echo base_url('assets/font-awesome/crimson.css');?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>">
     <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
-        <title>WOW - Element</title>
+        <title>My Website - Blog</title>
 </head>
 <body>
 <!-- div used to make the body blur -->

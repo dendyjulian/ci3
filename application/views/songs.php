@@ -13,7 +13,7 @@
     <link href="<?php echo base_url('assets/font-awesome/crimson.css');?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>">
     <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
-        <title>WOW - Element</title>
+        <title>MyWebsite - Blog</title>
 </head>
 <body>
 <!-- div used to make the body blur -->
@@ -52,21 +52,7 @@
             <div class="card-body">
               <h2 class="card-title">My Favorit Music</h2>
               <p class="card-text">Payung Teduh - Untuk Perempun Yang Sedang Dalam Pelukan</p>
-              <p class="generic-p">
-              Tak terasa gelap pun jatuh<br>
-              Di ujung malam menuju pagi yang dingin<br>
-              Hanya ada sedikit bintang malam ini<br>
-              Mungkin karena kau sedang cantik-cantiknya.
-              <p class="generic-p">
-              Lalu mataku merasa malu<br>
-              Semakin dalam ia malu kali ini<br>
-              Kadang juga ia takut<br>
-              Tatkala harus berpapasan di tengah pelariannya.
-              </p>
-              <p class="generic-p">
-              Di malam hari menuju pagi<br>
-              Sedikit cemas banyak rindunya.<br>
-              </p>
+              <?php echo $artikel;?>
               <audio src="<?php echo base_url('assets/PayungTeduh.mp3');?>" loop controls></audio>
               </div>
               <div class="card-footer text-muted">

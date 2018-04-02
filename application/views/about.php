@@ -13,7 +13,7 @@
     <link href="<?php echo base_url('assets/font-awesome/crimson.css');?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>">
     <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
-    <title>WOW - Generic</title>
+    <title>My Website - About</title>
 </head>
 <body>
 <!-- div used to make the body blur -->
@@ -45,7 +45,7 @@
         <section class="generic text-center">
            <h2>About Me</h2>
           <hr class="hr-mid">
-            <img class="img-generic img-responsive" src="<?php echo base_url('assets/img/5.jpg');?>">
+            <img class="img-generic img-responsive" src="<?php echo base_url('assets/img/7.jpg');?>">
         </section>
         <section class="font-2">
             <p class="generic-p">

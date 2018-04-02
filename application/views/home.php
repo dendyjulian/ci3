@@ -45,7 +45,7 @@
           <div class="wow">
           <div class="container">
                <div class="font-1 helmet text-center">
-                 <p>Welcome To My Website <strong>Dendy</strong> From Wakanda.</p>
+                 <?php echo $nama;?>
                </div>
           </div>
         </div>
