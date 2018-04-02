@@ -1,120 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Contact V13</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?php echo base_url('assets/images/icons/favicon.ico'); ?>"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css'); ?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css'); ?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css'); ?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/iconic/css/material-design-iconic-font.min.css'); ?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/animate/animate.css');?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/css-hamburgers/hamburgers.min.css');?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/animsition/css/animsition.min.css');?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/select2/select2.min.css');?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/daterangepicker/daterangepicker.css')?>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/util.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css');?>">
-<!--===============================================================================================-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/font-awesome/css/font-awesome.min.css');?>">
+    <link href="<?php echo base_url('assets/font-awesome/lora400.css');?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/font-awesome/poppins400.css');?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/font-awesome/crimson.css');?>" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>">
+    <script type="text/javascript" src="<?php echo base_url('assets/js/script.js');?>"></script>
+    <title>MyWebsite - Home</title>
 </head>
 <body>
+<!-- div used to make the body blur -->
+    <div class="overlay" id="overlay" onclick="closeNav()"></div>
 
+    <section class="head index-part-1">
+        <div class="head-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+                    <a href="<?php echo base_url('welcome/home');?>"><img class="img-responsive" src="<?php echo base_url('assets/img/logo.png');?>"></a>
+                </div>
+                <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+                    <div id="mySidenav" class="sidenav text-center">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+                        <a href="<?php echo base_url('welcome/home')?>">Home</a><hr>
+                        <a href="<?php echo base_url('welcome/about')?>">About</a><hr>
+                        <a href="<?php echo base_url('welcome/blog');?>">Blog</a>              
+                    </div>
+                    <div class="main" id="main">
+                      <a href="#" onclick="openNav()">MENU &#9776;</a>
+                    </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+          </div>
 
-	<div class="container-contact100">
-		<div class=<?php echo base_url('"contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="assets/images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1" ');?>></div>
+          <div class="wow">
+          <div class="container">
+               <div class="font-1 helmet text-center">
+                 <p>Welcome To My Website <strong>Dendy</strong> From Wakanda.</p>
+               </div>
+          </div>
+        </div>
+    </section>
+ 
+    <section class="index-part-2">
+         <div class="container">
 
-		<div class="contact100-more">
-			<i class="zmdi zmdi-phone-in-talk"></i>
-			(+100) 345 6389
-		</div>
+            <div class="row">
+               <div class="text-center">
+                 <h2>Features</h2>
+               </div>
+               <hr class="hr-mid">
+               <div class="sub-text text-center">
+                     <p class="font-1">
+                        Sed varius suspendisse dictum leo ipsum amet pellentesque
+                        fusce ac hendrerit consectetur tempor lorem ipsum
+                     </p>
+               </div>
+           </div>
 
-		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					Contact Us
-				</span>
+                <hr class="line-full">
+                
+                <div class="row"> 
+                    <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+                     <div class="holder-para">
+                      <h3>Tracking with controler</h3>
+                      <hr class="hr-short">
+                      <p class="font-2">
+                        The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed 
+                        is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I 
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 col-md-pull-9">
+                            <div class="holder-img">
+                              <img class="round-img img-responsive center-block" src="<?php echo base_url('assets/img/3.jpg');?>">
+                            </div>
+                    </div> 
+                </div>
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Name</span>
-					<input class="input100" type="text" name="name" placeholder="Name...">
-					<span class="focus-input100"></span>
-				</div>
+                <hr class="line-full">
+                
+                <div class="row">
+                    <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9">
+                     <div class="holder-para">
+                      <h3>Foam cushing</h3>
+                      <hr class="hr-short">
+                      <p class="font-2">
+                            The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed 
+                            is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I  
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
+                            <div class="holder-img">
+                              <img class="round-img img-responsive center-block" src="<?php echo base_url('assets/img/2.jpg');?>">
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </section>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Email</span>
-					<input class="input100" type="text" name="email" placeholder="Email addess...">
-					<span class="focus-input100"></span>
-				</div>
+    <section class="social">
+      <ul>
+        <li><a href="#" class="fa fa-pinterest fa-2x" aria-hidden="true"></a></li>
+        <li><a href="#" class="fa fa-twitter fa-2x" aria-hidden="true"></a></li>
+        <li><a href="#" class="fa fa-linkedin fa-2x" aria-hidden="true"></a></li>
+        <li><a href="#" class="fa fa-stumbleupon fa-2x" aria-hidden="true"></a></li>  
+      </ul>
+    </section>
 
-				<div class="wrap-input100">
-					<span class="label-input100">Phone</span>
-					<input class="input100" type="text" name="phone" placeholder="Phone Number...">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Questions/Comments..."></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<div class="wrap-contact100-form-btn">
-						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn">
-							Send
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-
-
-
-	<div id="dropDownSelect1"></div>
-
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/jquery/jquery-3.2.1.min.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/animsition/js/animsition.min.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/bootstrap/js/popper.js');?>"></script>
-	<script src="<?php echo base_url('assets/vendor/bootstrap/js/bootstrap.min.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/select2/select2.min.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/daterangepicker/moment.min.js');?>"></script>
-	<script src="<?php echo base_url('assets/vendor/daterangepicker/daterangepicker.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/vendor/countdowntime/countdowntime.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assets/google.js');?>"></script>
-	<script src="<?php echo base_url('assetsjs/map-custom.js');?>"></script>
-<!--===============================================================================================-->
-	<script src="<?php echo base_url('assetsjs/main.js');?>"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <div class="footer-p1">
+                    <p class="font-2">Copy right 2016 by wow technology</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img class="img-responsive foot-img" src="<?php echo base_url('assets/img/footer-logo.png');?>">
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <div class="footer-p2" >
+                     <p class="font-2">Made with  <i class="fa fa-heart" aria-hidden="true" ></i> by <a href=# target="_blank">themewagon</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
 </body>
 </html>
+
+
