@@ -3,6 +3,11 @@ class Personaldata extends CI_Model{
 	public function getData(){
 		$data = array(
 			'nama' => "Welcome To My Website <strong>Dendy</strong> From Wakanda.",
+			'tentang' => "<p class='generic-p'>
+              Perkenalkan nama saya Dendy Julian Maulana.<br>
+              Dari Malang lahir pada tanggal 08 Juli 1998. <br>
+              Anak Pertama dari kedua bersaudara.<br>
+            </p>",
 			'artikel' => "
 			  <p class='generic-p'>
 			  Tak terasa gelap pun jatuh<br>

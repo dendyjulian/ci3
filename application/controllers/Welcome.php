@@ -30,7 +30,9 @@ class Welcome extends CI_Controller {
 	}
 	public function about()
 	{
-		$this->load->view('about');
+		$this->load->model('personaldata');
+		$data = $this->personaldata->getData();
+		$this->load->view('about',$data,FALSE);
 	}
 	public function blog()
 	{
@@ -41,5 +43,9 @@ class Welcome extends CI_Controller {
 		$this->load->model('personaldata');
 		$data = $this->personaldata->getData();
 		$this->load->view('songs',$data,FALSE);
+	}
+	public function FormBlog()
+	{
+		$this->load->view('formblog');
 	}
 }

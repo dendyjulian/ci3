@@ -48,10 +48,7 @@
             <img class="img-generic img-responsive" src="<?php echo base_url('assets/img/7.jpg');?>">
         </section>
         <section class="font-2">
-            <p class="generic-p">
-              Blog ini saya dibuat untuk hal yang saya suka maupun hobby .
-            </p>
-
+          <?php echo $tentang;?>
         </section>
     </div>
     </section>

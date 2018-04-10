@@ -53,21 +53,6 @@
  
     <section class="index-part-2">
          <div class="container">
-
-            <div class="row">
-               <div class="text-center">
-                 <h2>Features</h2>
-               </div>
-               <hr class="hr-mid">
-               <div class="sub-text text-center">
-                     <p class="font-1">
-                        Sed varius suspendisse dictum leo ipsum amet pellentesque
-                        fusce ac hendrerit consectetur tempor lorem ipsum
-                     </p>
-               </div>
-           </div>
-
-                <hr class="line-full">
                 
                 <div class="row"> 
                     <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9 col-md-push-3">
