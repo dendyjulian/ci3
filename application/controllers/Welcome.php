@@ -46,6 +46,6 @@ class Welcome extends CI_Controller {
 	}
 	public function FormBlog()
 	{
-		$this->load->view('formblog');
+		$this->load->view('blogger/create');
 	}
 }

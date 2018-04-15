@@ -28,7 +28,7 @@ foreach ($artikel->result_array() as $row)
         echo "<td>".$row['gambar']."</td>";
         echo "<td><a href='".site_url('blogger/baca-artikel/'.$row['id'])."'>Tampil</a></td>";
         echo "<td><a href='".site_url('blogger/edit/'.$row['id'])."'>Edit</a></td>";
-        echo "<td><a href='".site_url('blogger/delete/'.$row['id'])."'>Delete</a></td>";
+        echo "<td><a href='".site_url('blogger/hapus/'.$row['id'])."'>Delete</a></td>";
         echo "</tr>";
 		}
 ?>

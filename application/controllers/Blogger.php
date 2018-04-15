@@ -78,6 +78,44 @@ class Blogger extends CI_Controller {
 		}
 	}
 
+
+	function edit($id){
+	$where = array('id' => $id);
+	$data['blog'] = $this->Artikel->edit_data($where,'blog')->result();
+	$this->load->view('blogger/edit',$data);
+	}
+
+	function update(){
+	$id = $this->input->post('id');
+	$judul = $this->input->post('judul');
+	$tgl = $this->input->post('tgl');
+	$author = $this->input->post('author');
+	$konten = $this->input->post('konten');
+	$gambar = $this->input->post('gambar');
+
+	$data = array(
+		'judul' => $judul,
+		'tgl' => $tgl,
+		'author' => $author,
+		'konten' => $konten,
+		'gambar' => $gambar,
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->Artikel->update_data($where,$data,'blog');
+	redirect('Blogger/index');
+	}
+
+	function hapus($id){
+		$where = array('id' => $id);
+		$this->Artikel->hapus_data($where,'blog');
+		redirect('blogger/index');
+	}
+
+
 	// public function edit(){
 	// 	$this->load->helper('form');
 	// 	$this->load->library('form_validation');

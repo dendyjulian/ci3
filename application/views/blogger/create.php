@@ -1,5 +1,9 @@
 <div class="container">
 <?php 
+ 
+ $this->load->helper('form');
+ $this->load->library('form_validation');
+
 	echo validation_errors();
 	echo form_open_multipart('blogger/create')
 ?>

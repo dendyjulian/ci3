@@ -63,22 +63,7 @@
             </section>
 
           <br>
-
-            <section class="Element-heading">
-             <div class="card mb-4">
-            <img class="card-img-top" src="<?php echo base_url('assets/img/mymusic.jpg');?>" alt="Card image cap">
-            <div class="card-body">
-              <h2 class="card-title">My Favorit Music</h2>
-              <p class="card-text">Payung Teduh - Untuk Perempun Yang Sedang Dalam Pelukan</p>
-              <a href="<?php echo base_url('welcome/songs');?>" class="btn btn-primary">Read More &rarr;</a>
-            </div>
-            <div class="card-footer text-muted">
-              Posted on January 1, 2017 by
-              <a href="<?php echo base_url('welcome/blog');?>">MyBlog</a>
-            </div>
-          </div>
-        </section>
-
+          
         <section class="Element-heading">
              <div class="card mb-4">
             <img class="card-img-top" src="<?php echo base_url('assets/img/mymusic.jpg');?>" alt="Card image cap">
@@ -93,26 +78,7 @@
             </div>
           </div>
         </section>
-
-<?php
-foreach ($artikel->result_array() as $row)
-    {
-        <section class="Element-heading">
-             <div class="card mb-4">
-            <img class="card-img-top" src="<?php echo base_url('assets/img/mymusic.jpg');?>" alt="Card image cap">
-            <div class="card-body">
-              <h2 class="card-title">My Favorit Music</h2>
-              <p class="card-text">Payung Teduh - Untuk Perempun Yang Sedang Dalam Pelukan</p>
-              <a href="<?php echo base_url('welcome/songs');?>" class="btn btn-primary">Read More &rarr;</a>
-            </div>
-            <div class="card-footer text-muted">
-              Posted on January 1, 2017 by
-              <a href="<?php echo base_url('welcome/blog');?>">MyBlog</a>
-            </div>
-          </div>
-        </section>
-    }
-?>        
+        
         <section class="social">
           <ul>
             <li><a href="#" class="fa fa-pinterest fa-2x" aria-hidden="true"></a></li>
