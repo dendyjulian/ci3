@@ -10,6 +10,7 @@ echo form_open_multipart( 'blogger/create', array('class' => 'needs-validation',
 
 Judul : <input type="text" class="form-control" name="judul" value="<?php echo set_value('judul') ?>"><br>
 Tgl : <input type="date" class="form-control" name="tgl" value="<?php echo set_value('tgl') ?>"><br>
+Kategori : <?php echo form_dropdown('kategori', $dropdown, set_value('kategori'), 'class="form-control" required'); ?> <br>
 Author : <input type="text" class="form-control" name="author" value="<?php echo set_value('author') ?>"><br>
 Konten : <textarea name="konten" class="form-control" style="height:400px;" value="<?php echo set_value('konten') ?>"></textarea><br>
 Gambar : <input type="file" name="gambar"><br>

@@ -9,6 +9,7 @@ class Blogger extends CI_Controller {
 		parent::__construct();
 		//Load model dan helper
 		$this->load->model('Artikel');
+		$this->load->model('kategoridata');
 		$this->load->helper('url_helper');
 	}
 
@@ -16,9 +17,31 @@ class Blogger extends CI_Controller {
 	{
 		//Memanggil fungsi menampilkan semua tabel artikel
 		$data['artikel']=$this->Artikel->get_article();
-		$this->load->view('blogger/header');
-		$this->load->view('blogger/tampil_blog', $data);
-		$this->load->view('blogger/footer');
+		// $this->load->view('blogger/header');
+		$this->load->view('blog', $data);
+		// $this->load->view('blogger/footer');
+	}
+
+	public function home()
+	{
+		$this->load->model('personaldata');
+		$data = $this->personaldata->getData();
+		$this->load->view('home',$data,FALSE);
+	}
+	public function about()
+	{
+		$this->load->model('personaldata');
+		$data = $this->personaldata->getData();
+		$this->load->view('about',$data,FALSE);
+	}
+	public function blog()
+	{
+		$data['artikel']=$this->Artikel->get_article();	
+		$this->load->view('blog', $data);
+	}
+	public function kategori()
+	{
+		$this->load->view('kategori');
 	}
 
 	public function view(){
@@ -41,6 +64,8 @@ class Blogger extends CI_Controller {
 		//Meload helper form dan form valudasi
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+		//ambil data dropdown pada model kategori
+		$data['dropdown'] = $this->kategoridata->dropdown();
 		//validasi inputan yang masuk
 		$this->form_validation->set_rules('judul', 'Judul', 'required');
 		$this->form_validation->set_rules('konten', 'Konten', 'required');
@@ -48,7 +73,7 @@ class Blogger extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			//Meload View tambah artikel
 			$this->load->view('blogger/header');
-			$this->load->view('blogger/create');
+			$this->load->view('blogger/create',$data);
 			$this->load->view('blogger/footer');
 		} else {
 				$config['upload_path']          = 'assets/img/';
@@ -66,6 +91,7 @@ class Blogger extends CI_Controller {
 			//Menambah data
 			$object = array(
      		'judul' => $this->input->post('judul'),
+     		'idcateg' => $this->input->post('kategori'),
      		'konten' => $this->input->post('konten'),
      		'author' => $this->input->post('author'),
      		'gambar' => $this->upload->data('file_name')

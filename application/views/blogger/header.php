@@ -24,15 +24,16 @@
           <div class="container">
               <div class="row">
                 <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
-                  <a href="<?php echo base_url('welcome/home');?>"><img class="img-responsive" src="<?php echo base_url('assets/img/logo.png');?>"></a>
+                  <a href="<?php echo base_url('Blogger/home');?>"><img class="img-responsive" src="<?php echo base_url('assets/img/logo.png');?>"></a>
                 </div>
                 <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
                     <div id="mySidenav" class="sidenav text-center">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
-                    <a href="<?php echo base_url('welcome/home');?>">Home</a><hr>
-                    <a href="<?php echo base_url('welcome/about');?>">About</a><hr>
-                    <a href="<?php echo base_url('welcome/blog');?>">Blog</a><hr>
-                    <a href="<?php echo base_url('welcome/formblog');?>">FormBlog</a>              
+                    <a href="<?php echo base_url('Blogger/home');?>">Home</a><hr>
+                    <a href="<?php echo base_url('Blogger/about');?>">About</a><hr>
+                    <a href="<?php echo base_url('Blogger/blog');?>">Blog</a><hr>
+                    <a href="<?php echo base_url('Blogger/create');?>">Create Blog</a><hr>
+                    <a href="<?php echo base_url('Kategori');?>">Create Kategori</a>             
                 </div>
                     <div class="main" id="main">
                       <a href="#" onclick="openNav()">MENU &#9776;</a>
