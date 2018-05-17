@@ -20,7 +20,7 @@
 			<tr>
 				<td></td>
 				<td><button id="submitBtn" type="submit" class="btn btn-primary">Simpan</button></td>
-			</tr>
+			</tr>	
 		</table>
 	</form>	
 </p>

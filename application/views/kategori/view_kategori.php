@@ -1,10 +1,9 @@
 <div class="container">
 <table class="table table-bordered table-striped" id="mydata">
- <?php foreach ($kategori->result() as $data){ ?>
   <br>
 
-  <a href=" <?php echo site_url('kategori/create/'.$data->idcateg); ?>" class="btn btn-warning btn-xs" role="button">Create</i></a> 
- 
+  <a href=" <?php echo site_url('kategori/create/'); ?>" class="btn btn-warning btn-xs" role="button">Create</i></a> 
+  <?php foreach($all_categories as $data){ ?>
 <div class="col-md-6">
   <div class="thumbnail">
     <div class="caption">
@@ -22,3 +21,31 @@
 <?php } ?>
 </table>
 </div>
+
+<div align="center">
+<?php
+        // $links ini berasal dari fungsi pagination
+        // Jika $links ada (data melebihi jumlah max per page), maka tampilkan
+            echo $links;
+        ?>
+</div>
+
+<br>
+
+<table class="table table-striped" id="mydata">
+  <thead>
+    <tr>
+      <td>Nama</td>
+      <td>deskripsi</td>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+      foreach ($kategori->result() as $data) { ?>
+        <tr>
+          <td><?=$data->nama?></td>
+          <td><?=$data->deskripsi?></td>
+        </tr>
+      <?php } ?>
+  </tbody>
+</table>

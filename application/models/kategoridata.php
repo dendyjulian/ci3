@@ -33,10 +33,26 @@ class Kategoridata extends CI_Model{
 		}
 	}
 
+	public function get_all_categories($limit = FALSE, $offset = FALSE){  
+       if ( $limit ) {
+           $this->db->limit($limit, $offset);
+       }
+       // Urutkan berdasar abjad
+       $this->db->order_by('nama');
+
+       $query = $this->db->get('kategori');
+       return $query->result();
+   	}
+
 	public function delete_kategori($id){
 		$this->db->where('idcateg', $id);
 		return $this->db->delete('kategori');
 	}
 
+	public function get_total(){
+		return $this->db->count_all("kategori");
+	}
+
 }
+
 ?>
