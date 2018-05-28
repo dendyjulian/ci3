@@ -37,7 +37,7 @@ class User extends CI_Controller{
             // Tampilkan pesan
             $this->session->set_flashdata('user_registered', 'Anda telah teregistrasi.');
 
-            redirect('blogger');
+            redirect('User/login');
         }
     }
 

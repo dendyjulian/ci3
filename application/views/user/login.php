@@ -31,7 +31,7 @@
                                 Don’t have an account?
                             </span>
 
-                            <a href="" class="txt2">
+                            <a href="<?php echo base_url('User/register');?>" class="txt2">
                                 Sign up
                             </a>
                         </li>
