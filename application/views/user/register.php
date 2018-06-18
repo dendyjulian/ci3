@@ -36,6 +36,20 @@
                         <span class="focus-input100" data-placeholder="Confirm Password"></span>
                     </div>
 
+                       <div class="form-group">
+                        <label for="">Pilih Jenis Member</label>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="membership" id="membergratis" value="2" checked>
+                            <label class="form-check-label" for="membergratis">Free Member</label>
+                       </div>
+
+                                           
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="membership" id="memberberbayar" value="3">
+                            <label class="form-check-label" for="memberberbayar">Paid Member</label>
+                        </div>
+                    </div>
+
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn" type="submit">
                            Submit
