@@ -9,6 +9,10 @@ class Kategori extends CI_Controller {
         $this->load->model('kategoridata');
         $this->load->library('form_validation');
         $this->load->library('pagination');
+        $this->load->helper('url_helper');
+        if ($this->session->userdata('level')==null) {
+			redirect('User/login');
+		}
     }
 
     public function index()

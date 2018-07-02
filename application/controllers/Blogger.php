@@ -11,6 +11,9 @@ class Blogger extends CI_Controller {
 		$this->load->model('Artikel');
 		$this->load->model('kategoridata');
 		$this->load->helper('url_helper');
+		if ($this->session->userdata('level')==null) {
+			redirect('User/login');
+		}
 	}
 
 	public function index()

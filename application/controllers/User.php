@@ -43,7 +43,7 @@ class User extends CI_Controller{
 
         public function login() {
         $data['page_title'] = 'Log In';
-
+        
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
 
@@ -66,7 +66,7 @@ class User extends CI_Controller{
             'user_id' => $user_id,
             'username' => $username,
             'logged_in' => true,
-            'level' => $this->user_model->get_user_level($user_id)
+            'level' => $this->user_models->get_user_level($user_id)
         );
 
          $this->session->set_userdata($user_data);
@@ -74,7 +74,7 @@ class User extends CI_Controller{
         // Set message
         $this->session->set_flashdata('user_loggedin', 'Selamat Datang'. $username );
 
-        redirect('user/dashboard');
+        redirect('User/dashboard');
     	} else {
         // Set message
         $this->session->set_flashdata('login_failed', 'Login is invalid');
@@ -90,11 +90,12 @@ class User extends CI_Controller{
         $this->session->unset_userdata('logged_in');
         $this->session->unset_userdata('user_id');
         $this->session->unset_userdata('username');
+        $this->session->unset_userdata('level');
 
         // Set message
         $this->session->set_flashdata('user_loggedout', 'Anda sudah log out');
-
         redirect('user/login');
+
     }
 
     public function dashboard(){
@@ -105,7 +106,7 @@ class User extends CI_Controller{
 
         $username = $this->session->userdata('username');
         //Detail User
-        $data['user'] = $this->user_model->get_user_details( $username );
+        $data['user'] = $this->user_models->get_user_details( $username );
         //Panggil View Dashboard
         $this->load->view('dashboard', $data);
     }
